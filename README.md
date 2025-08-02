@@ -14,7 +14,7 @@ Extensibility: Modular design for experimenting with quantum circuit architectur
 Installation
 
 Install Julia (version 1.10 or later recommended).
-Clone this repository:git clone https://github.com/your-username/QuantumHybridML.git
+Clone this repository:git clone https://github.com/jilovecjoseph/QuantumHybridML.git
 cd QuantumHybridML
 
 
