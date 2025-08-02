@@ -1,0 +1,14 @@
+name = "QuantumHybridML"
+uuid = "12345678-1234-5678-1234-567812345678"
+authors = ["Your Name <your.email@example.com>"]
+version = "0.1.0"
+
+[deps]
+Yao = "5872b779-8223-5990-8dd0-5abbb0748c8c"
+CuYao = "b46d2c3b-7a1c-5c3e-b6df-7c7b9e6d9c1d"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Optimisers = "3bd65402-198e-11e9-06a4-7d7a6f1146b6"
+
+[compat]
+julia = "1.10"
