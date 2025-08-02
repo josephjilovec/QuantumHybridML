@@ -1,20 +1,23 @@
 using Pkg
 Pkg.activate(".")
-using Yao, CuYao, Flux, LinearAlgebra, Optimisers
+using Yao, CuYao, Flux, LinearAlgebra, Optimisers, Statistics, Plots
 include("../src/hybrid_quantum_nn.jl")
+include("../src/quantum_variational_optimizer.jl")
 
 # Generate dummy data
-dummy_input = rand(Float32, 16, 10)
+x_train = rand(Float32, 16, 100)
+y_train = rand(Float32, 16, 100) # Replace with actual labels
 
-# Run the model
-output = model(dummy_input)
+# Run the hybrid model
+println("Running HybridQuantumNN...")
+output_hybrid = model(x_train)
+println("Hybrid model output (first 2 samples): ", output_hybrid[:, 1:2])
 
-# Print sample output
-println("Sample output: ", output[:, 1:2])
+# Run the variational optimizer
+println("\nRunning VQCOptimizer...")
+vqc_opt = create_vqc_optimizer(4, 3)
+losses, entropies = train_vqc_optimizer!(vqc_opt, x_train, y_train, 10) # Shortened for demo
+println("Final loss: ", losses[end], ", Final entropy: ", entropies[end])
 
-# Run a single training epoch
-loss, grads = Flux.withgradient(model) do m
-    output = m(dummy_input)
-    sum(abs2, output)
-end
-println("Sample loss: ", loss)
+# Display training plot
+display("image/png", read("training_progress.png"))
