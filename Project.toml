@@ -9,6 +9,8 @@ CuYao = "b46d2c3b-7a1c-5c3e-b6df-7c7b9e6d9c1d"
 Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Optimisers = "3bd65402-198e-11e9-06a4-7d7a6f1146b6"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 
 [compat]
 julia = "1.10"
