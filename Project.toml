@@ -1,6 +1,6 @@
 name = "QuantumHybridML"
      uuid = "12345678-1234-5678-1234-567812345678"
-     authors = ["Joseph Jilovec <josephjilovec@example.com>"]
+     authors = ["Joseph Jilovec"]
      version = "0.1.0"
 
      [deps]
