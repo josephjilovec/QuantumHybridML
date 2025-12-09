@@ -1,0 +1,44 @@
+"""
+Configuration constants for QuantumHybridML.
+
+This module provides configuration constants and default values.
+"""
+module ConfigModule
+
+# Default values
+const DEFAULT_NQUBITS = 4
+const DEFAULT_NLAYERS = 3
+const DEFAULT_HIDDEN_DIM = 32
+const DEFAULT_LEARNING_RATE = 0.01
+const DEFAULT_BATCH_SIZE = 32
+const DEFAULT_EPOCHS = 100
+
+# Limits
+const MAX_QUBITS = 20
+const MIN_QUBITS = 1
+const MAX_LAYERS = 100
+const MIN_LAYERS = 1
+
+# Numerical tolerances
+const EPSILON = 1e-10
+const STATE_NORM_TOLERANCE = 1e-10
+const ENTROPY_TOLERANCE = 1e-10
+
+# Performance settings
+const ENABLE_CUDA_BY_DEFAULT = true
+const ENABLE_CACHING = true
+const BATCH_PROCESSING_THRESHOLD = 10
+
+# Loss function weights
+const COHERENCE_PENALTY_WEIGHT = 0.1
+const NEXUS_INTEGRITY_PENALTY_WEIGHT = 0.05
+
+export DEFAULT_NQUBITS, DEFAULT_NLAYERS, DEFAULT_HIDDEN_DIM
+export DEFAULT_LEARNING_RATE, DEFAULT_BATCH_SIZE, DEFAULT_EPOCHS
+export MAX_QUBITS, MIN_QUBITS, MAX_LAYERS, MIN_LAYERS
+export EPSILON, STATE_NORM_TOLERANCE, ENTROPY_TOLERANCE
+export ENABLE_CUDA_BY_DEFAULT, ENABLE_CACHING, BATCH_PROCESSING_THRESHOLD
+export COHERENCE_PENALTY_WEIGHT, NEXUS_INTEGRITY_PENALTY_WEIGHT
+
+end # module
+

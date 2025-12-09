@@ -1,18 +1,26 @@
 name = "QuantumHybridML"
-     uuid = "12345678-1234-5678-1234-567812345678"
-     authors = ["Joseph Jilovec"]
-     version = "0.1.0"
+uuid = "12345678-1234-5678-1234-567812345678"
+authors = ["Joseph Jilovec"]
+version = "0.2.0"
 
-     [deps]
-     Yao = "5872b779-8223-5990-8dd0-5abbb0748c8c"
-     CuYao = "b46d2c3b-7a1c-5c3e-b6df-7c7b9e6d9c1d"
-     Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
-     LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
-     Optimisers = "3bd65402-198e-11e9-06a4-7d7a6f1146b6"
-     Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
-     Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
-     LIBSVM = "b1bec4e5-fd67-5b8b-85c0-9c286d87dcaa"
-     MLDatasets = "eb30cadb-4394-5ae3-aed4-317e484a6458"
+[deps]
+Yao = "5872b779-8223-5990-8dd0-5abbb0748c8c"
+CuYao = "b46d2c3b-7a1c-5c3e-b6df-7c7b9e6d9c1d"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Optimisers = "3bd65402-198e-11e9-06a4-7d7a6f1146b6"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+LIBSVM = "b1bec4e5-fd67-5b8b-85c0-9c286d87dcaa"
+MLDatasets = "eb30cadb-4394-5ae3-aed4-317e484a6458"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Logging = "56ddb016-857b-54e1-b83d-7b0f05741ec6"
 
-     [compat]
-     julia = "1.10"
+[compat]
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
